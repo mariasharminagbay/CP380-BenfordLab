@@ -17,7 +17,13 @@ namespace BenfordLab
          */
         public static int getFirstDigit(int digit) {
             // TODO
-            return 0;
+            // Remove last digit from number
+            // till only one digit is left
+            while (digit >= 10)
+                digit /= 10;
+
+            // return the first digit
+            return digit;
         }    
     }
 }
